@@ -10,3 +10,6 @@ Git is free software distributed under the GPL.
 magic qun hahahahhah
 
 new add  old
+
+
+github news , we will learn it.
