@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* 这个css是初始化的css，在任何手机项目里面都可以使用 */
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	/* 解决IOS默认滑动很卡的情况 */
+	/* -webkit-overflow-scrolling : touch;  */
+}
+/* 禁止缩放表单 */
+input[type="submit"], input[type="reset"], input[type="button"], input {
+	resize: none;
+	border: none;
+}
+
+/* 图片自适应 */
+img {
+	width: 100%;
+	height: auto;
+	width: auto\9;
+ /* ie8 */
+	display: block;
+	-ms-interpolation-mode: bicubic;
+/*为了照顾ie图片缩放失真*/
+}
+
+/* 初始化 */
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px/1.5 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+	color: #555;
+	background-color: #F7F7F7;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+img {
+	border: none;
+}
+
+/*header*/
+.gz {
+    width: 20%;
+    position: relative;
+    float: right;
+    margin-top: -104.5vw;
+}
+
+.header-btn {
+    width: 55%;
+    position: relative;
+    float: right;
+    margin-right: 23%;
+    margin-top: -15vw;
+}
+
+/*header*/
+
+/*article*/
+.article-little {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -134vw;
+    position: relative;
+    float: left;
+}
+
+.article-little ul li {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+}
+.article-little ul li div{
+    border-radius: 4vw;
+    border: 0.8vw solid #8f2bda;
+    overflow:  hidden;
+}
+
+.article-little ul li:nth-child(3) {
+    margin-right: 0;
+}
+
+.article-little ul li p {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.article-big {
+    width: 95%;
+    position: relative;
+    margin-left: 2.5%;
+    float: left;
+    margin-top: -53vw;
+}
+
+.article-big ul li {
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+}
+.article-big ul li div{
+    border-radius: 4vw;
+    border: 2px solid #8f2bda;
+    overflow: hidden;
+}
+
+.article-big ul li:nth-child(5) {
+    margin-right: 0
+}
+
+.article-big ul li p {
+    font-size: 4vw;
+    text-align: center;
+}
+
+/*article*/
+
+/*footer*/
+.tv {
+    position: relative;
+    margin-top: -134vw;
+}
+
+.swiper-container {
+    width: 84%;
+}
+
+.swiper-button-prev {
+    background-image: url(../img/left.png);
+    left: 1vw;
+    right: auto;
+    width: 4%;
+    background-size: 100% 100%;
+    margin-top: -10.5vw;
+    height: 10vw;
+}
+
+.swiper-button-next {
+    background-image: url(../img/right.png);
+    right: 1vw;
+    left: auto;
+    width: 4%;
+    background-size: 100% 100%;
+    margin-top: -10.5vw;
+    height: 10vw;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    cursor: auto;
+    pointer-events: none;
+    outline: none;
+}
+
+.tv .swiper-wrapper .swiper-slide p {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+/*footer*/
