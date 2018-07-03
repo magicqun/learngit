@@ -54,6 +54,58 @@ img {
 	border: none;
 }
 
+
+/*common*/
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+iframe{
+    display:none;
+}
+
+html, body, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 0;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+img {
+    border: 0;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*common*/
 /*header*/
 .gz {
     width: 20%;
@@ -176,3 +228,61 @@ img {
 }
 
 /*footer*/
+
+.download {
+    background: url("../img/footer_dowload.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 16vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.download img {
+    width: 30%;
+    position: absolute;
+    right: 6%;
+    margin-top: 2.5vw;
+}
+
+.pop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: none;
+}
+
+.rule {
+    position: fixed;
+    z-index: 102;
+    top: 20%;
+    display: none;
+}
+
+.cancel1 {
+    width: 5%;
+    margin-left: 86%;
+}
+
+.rule-cont {
+    width: 76%;
+    margin-left: 12%;
+    margin-top: 4vw;
+}
+
+.rule-cont-txt {
+    font-size: 3vw;
+    margin-top: -64vw;
+    width: 86%;
+    margin-left: 7%;
+    height: 53vw;
+    overflow-y: auto;
+    line-height: 5vw;
+}
